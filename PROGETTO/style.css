@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*sottolineatura elementi nav*/
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}
+
+body{
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background-color: rgb(39, 39, 39, 0.4);
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 60px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: orange;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, .active{
+    border-bottom: 2px solid orange;
+}
+
+.nav-button-account .btn{
+    margin-left: 15px;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background-color: darkgoldenrod;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease; 
+}
+.btn:hover{
+    background-color: lightsalmon;
+}
+.nav-menu-btn{
+    display: none;
+}
+
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.register-container{
+    position: absolute;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.top span{
+    color: black;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top span a{
+    font-weight: 500;
+    color: green;
+    margin-left: 5px;
+}
+
+header{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.input-box{
+    padding-top: 30px;
+}
+
+.user-data{
+    display: flex;
+    gap: 10px;
+}
+
+.input-field{
+    font-size: 20px;
+    background: darkgrey;
+    color: rgb(87, 87, 191);
+    height: 60px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+
+}
+
+.input-field:hover, .input-field:focus{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border:  none;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.submit:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 1px 5px 7px 1px rgba(1, 1, 1, 0.25);
+}
+.register-footer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.register-footer .one{
+    display: flex;
+    gap: 5px;
+}
+
+.register-footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}

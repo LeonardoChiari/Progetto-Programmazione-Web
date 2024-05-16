@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>OAK-Store</title>
+</head>
+<body>
+
+    <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <p>OAK-Store</p>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="link" >Home</a></li>
+                        <li><a href="carteCollezionabili.html" class="link" >Carte Collezionabili</a></li>
+                        <li><a href="#" class="link" >Accessori</a></li>
+                        <li><a href="#" class="link" >Manga</a></li>
+                        <li><a href="#" class="link" >Offerte</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button-account">
+                    <button class="btn" id="accountBtn" onclick="accountingPage()">Account</button>
+                </div>
+                <div class="nav-menu-btn">
+                    <i class="bx-menu"></i>
+                </div>
+            </nav>
+        
+
+        <!----------------------- FORM BOX ---------------------------->
+        <div class="form-box">
+
+            <div class="register-container" id="register">
+                <div class="top">
+                    <span>Hai già un account? <a href="#" onclick=" login()">Accedi</a></span>
+                    <header>Registrati</header>
+                </div>
+                <div class="user-data">
+
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Nome">
+                        <i class="bx bx-user"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Cognome">
+                        <i class="bx bx-user"></i>
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Registrati">
+                </div>
+
+                <div class="register-footer">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check">Ricordami</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Termini e Condizioni</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
