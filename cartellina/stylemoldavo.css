@@ -91,6 +91,10 @@ body{
     /*-------------------------------------------------*/    
 }
 
+#header .active{
+ font-size:23px;
+}
+
 #navbar{
     display: flex;
     align-items: center;
@@ -200,6 +204,7 @@ body{
 #feature .fe-box:hover{
     /*----quando ci passi sopra l'ombra cambia,da effetto accensione---*/
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.19);
+    cursor: pointer;
 
 
  }
@@ -792,4 +797,50 @@ footer.copyright{
     #bannerpiccoli .banner-box{
         width: 100%;
     }
+
+    #close{
+        
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px ;
+    }
+
 }
+
+
+
+/*------ PArte relativa ai "featured" come sped gratuita, ecc---- ----*/
+
+ #spedizione-gratuita h4{
+
+    padding-top: 50px;
+    font-size: 50px;
+
+  text-align: center;
+
+ }
+
+ #spedizione-gratuita p{
+    font-size: 30px;
+
+    padding: 40px;
+ }
+
+
+
+ #herosped{
+
+    background-image: url(img/css-stripe-hero.png);
+    height: 40vh;
+    width: 100%;
+    background-size: cover ;
+    background-position: top 55% right 0;
+    padding: 20px 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: center;
+
+ }
