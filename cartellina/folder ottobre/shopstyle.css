@@ -1,0 +1,145 @@
+/* Pagina "shop" */
+
+#hero-shop{
+  width: 100%;
+  height: 70ch;
+  align-items: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: none;
+  transition: 0.4s ;
+ 
+}
+
+#hero-shop img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  scale: 0.9;
+  width: 100%;
+  border-radius: 50px;
+  border: 3px solid blueviolet;
+}
+
+#hero-shop img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/*Per il numero delle pagine e la preccia*/
+
+#frecce{
+    align-items: center;
+    text-align: center;
+}
+
+#frecce a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+#frecce a i{
+    font-weight: 200;
+}
+
+/*----------------------------------------------------FINE SHOP.HTML--------------------------------------------------------*/
+
+/* per la pagina dei singoli prodotti*/
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .pro-img{
+    width: 25%;
+    margin-right: 50px;
+
+}
+/* parte relativa al dettaglio del prodotto (nome ,prezzo, descrizione ecc...) */
+#prodetails .prodetails-details{
+     
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .prodetails-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .prodetails-details h2{
+ font-size: 26px;
+}
+
+#prodetails .prodetails-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .prodetails-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+/*non voglio che quando clicco l'input, il bordo si evidenzi*/
+#prodetails .prodetails-details input:focus{
+    outline: none;
+}
+
+#prodetails .prodetails-details button{
+    background-color: #088178;
+    color: white;
+}
+
+#prodetails .prodetails-details span{
+    line-height: 25px;
+}
+.img-piccole-gruppo{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.img-piccole-col{
+    flex-basis: 24%;/*specificare la dimensione iniziale di un elemento flessibile lungo l'asse principale 
+                     prima che venga applicato lo spazio disponibile. 
+                     In altre parole, flex-basis determina la dimensione base di un elemento prima che venga ridimensionato*/
+cursor: pointer;
+                    }
+
+
+.large {
+    width: 600px; /* Dimensione ingrandita */
+       }
+
+
+       /*prodotto singolo*/
+
+       @media (max-width:477px){
+
+
+         #prodetails{
+            display: flex;
+            flex-direction: column;
+
+         }
+
+        #prodetails .pro-img{
+
+            width: 100%;
+            margin-right:0px ;
+        }
+   
+        #prodetails .prodetails-details{
+            width: 100%;
+        }
+
+       }

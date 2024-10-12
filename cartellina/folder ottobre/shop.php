@@ -1,0 +1,322 @@
+<?php
+    session_start();
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAK STOREEEE</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shopstyle.css">
+</head>
+
+
+<body>
+
+
+   <section id="header">
+     <a href="#"><img src="img/thumbnail-1.webp" id="logo" class="logo"></a>
+
+     <div>
+        <ul id="navbar">
+            <li><a  href="index.php">Home</a></li>
+            <li><a class="active" href="shop.php">Shop</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <?php 
+            if($_SESSION['loggato'] === true){
+                echo '<li><a href="pagina_utente.php">Account</a></li>';
+            }else{
+                echo '<li><a href="account.php">Account</a></li>';
+            }?>
+            
+            <li id="leva-car"><a href="cart.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
+            <a href="#" id="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+
+            </a>
+
+        </ul>
+     </div>
+
+     <div id="mobile">
+  
+        <a href="cart.html"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+        <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>        
+     </div>
+
+   </section>
+
+   <section id="hero-shop">
+
+    <div class="preorder">
+        
+   <img  src="img/Segreto-Fiabesco-Banner-Desktop.jpg">
+    </div>
+
+   </section>
+
+
+
+
+   <section id="product1" class="section-p1">
+      <h2>Carte pokemon gradate</h2>
+      <p>Spedizione gratuita per ordini sopra ai 25€</p>
+      <div class="pro-container">
+
+
+       <!-- La parte onlcick.... serve per riderezionare -->
+        <div class="pro" onclick="window.location.href='product.html'">
+        
+        
+            <img src="img.carte/RayholoPSA3.webp" alt="">
+            <div class="desc">
+                <span>PSA 3</span>
+                <h5> 2012 Pokemon Japanese BW Promo 144 Rayquaza Holo 
+                    + Nobunaga's Ambition </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€19.60</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/celebijappromopsa10.webp" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5> 2021 Pokemon Japanese
+                     S Promo 175 FA Celebi V Jet-Black Spirit Booster Box </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€123.00</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/charjapshinystarpsa10.jpg" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5> 2020 Pokemon Japanese Sword & Shield 
+                    Shiny Star V 307 FA Charizard V </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€306.80</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/PSA10-PIKACHUWITHGREYFELTHATPOKEMONXVANGOGH_720x@2x.webp" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5> 2023 Pokemon SVP EN Black Star Promo 085 Pikachu with Grey Felt Hat Van Gogh </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€318.25</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/psa10-2016PONCHO-WEARINGPIKACHUMEGACHARIZARDXPIKACHUSPECIALBOX_720x@2x.jpg" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5> 22016 Pokemon Japanese XY Promo 207 Poncho Wearing Pikachu Mega Charizard X </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€6136.00</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/psa10-2015POKEMONJAPANESEXYPROMO151PRETENDGYARADOSPIKACHUHOLO_220x@2x.webp" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5>2015 Pokemon Japanese XY Promo 151 Pretend Gyarados Pikachu Holo </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€5986.74</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/psa10-moonbreon.jpg" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5> Umbreon Vmax Alt Art 095/069 Pokémon Eevee Heroes Japanese MOONBREON</h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€1385.00</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="pro">
+            <img src="img.carte/psa10-2021POKEMONJAPANESEPROMOCARDPACK25THANNIVERSARYEDITION001CHARIZARD-HOLO_720x@2x.webp" alt="">
+            <div class="desc">
+                <span>PSA 10</span>
+                <h5>  2021 Pokemon Japanese 001 Charizard Holo Promo Card Pack 25th Anniversary Edition </h5>
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h4>€198.48</h4>
+            </div>
+            <a href="#"><i class="fa fa-cart-plus cart" aria-hidden="true"></i></a>
+        </div>
+
+        
+
+
+      </div>
+
+
+   
+
+   </section>
+
+   <section id="frecce" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">
+        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+
+    </a>
+
+
+   </section>
+
+
+
+<section id="newsletter" class="section-p1 section-m1">
+<div class="newstext">
+    <h4> Inscriviti alla newsletter</h4>
+    <p>Ricevi notifiche sulle nostre <span>novità e offerte</span></p>
+
+</div>
+<div class="form">
+    <input type="text" placeholder="La tua email">
+    <button class="button-normal">Inscriviti</button>
+
+</div>
+
+</section>
+
+
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/images.png">
+        <h4>Contatti</h4>
+        <p><strong>Indirizzo:</strong> Via brombeis, 80135 Napoli NA</p>
+        <p><strong>Numero:</strong> +39 1234567890</p>
+        <p><strong>Orario:</strong> 10-19, dal Lun al Sab</p>
+        <div class="follow">
+            <h4>Followaci</h4>
+            <div class="icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+
+
+ </div>
+        </div>
+
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#"> Su di noi</a>
+        <a href="#"> Informazioni sulla spedizione</a>
+        <a href="#"> Privacy</a>
+        <a href="#"> Termine e condizioni</a>
+        <a href="#"> Contattaci</a>
+
+    </div>
+
+    <div class="col">
+        <h4> il mio Account</h4>
+        <a href="#"> Sign in</a>
+        <a href="#"> Vedi carrello</a>
+        <a href="#"> La mia wishlist</a>
+        <a href="#"> Traccia il mio pacco</a>
+        <a href="#"> Aiuto</a>
+
+    </div>
+    <div class="col-install">
+        <h4>Installa App </h4>
+        <p>Dal App Store o Google Play</p>
+        <div class="row">
+            <img class="immagineapp" src="img/pay/Google_Play_2022_logo.png" alt="">
+            <img class="immagineapp1" src="img/pay/apple_appstore_logo_icon_168587.png" alt="">
+        </div>
+        <p>Pagamenti in sicurezza</p>
+        <img class="pay" src="img/pay/visamastercardAexp.jpg" alt="">
+
+
+    </div>
+    
+    <div class="copyright">
+        <p>2024, Moldavo&co. - HTML CSS JS e qualcosaltro</p>
+    </div>
+
+  
+
+</footer>
+
+    <script src="script.js"></script>
+    <!--<img class="rotate01" src="img/Poké_Ball_icon.svg.png">-->
+</body>
+
+
+</html>
